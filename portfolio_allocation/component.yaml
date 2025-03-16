@@ -1,0 +1,24 @@
+name: portfolio_allocation
+author: ivan
+version: 0.1.0
+type: custom
+description: A tool for generating optimized cryptocurrency portfolio allocations
+  using Modern Portfolio Theory. Analyzes market sentiment using multiple technical
+  indicators and provides detailed insights based on Sharpe ratios, expected returns,
+  and volatility. Supports customizable risk tolerance levels and investment amounts
+  while offering AI-powered recommendations for portfolio optimization.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeidtjfeb6sxscnj6sh5rrihxlqh44dz4althw3mzuvibwzcwyy4n5i
+  portfolio_allocation.py: bafybeicsah74yelljpcjf6psiqggkfmmi7onwnqs6t2eoxmp343dvwb7ie
+fingerprint_ignore_patterns: []
+entry_point: portfolio_allocation.py
+callable: run
+dependencies:
+  openai:
+    version: '>=1.58.1'
+  requests:
+    version: '>=2.29.0'
+  pandas:
+    version: '>=2.0.0'
